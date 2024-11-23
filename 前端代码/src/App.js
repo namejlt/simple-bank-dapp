@@ -51,7 +51,7 @@ function App() {
     let deposit = await bankConnect.methods.getMyBalance().call({
       from: address
     });
-    setMyDeposit(deposit);
+    setMyDeposit(deposit + "");
   }
 
   const deposit = async () => {
